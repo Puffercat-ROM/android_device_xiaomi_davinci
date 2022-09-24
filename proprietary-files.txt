@@ -319,7 +319,6 @@ vendor/etc/thermal-normal.conf
 vendor/etc/thermal-phone.conf
 vendor/etc/thermal-tgame.conf
 vendor/etc/thermald-devices.conf
--vendor/lib64/libthermalclient.so
 
 # Touchscreen firmware
 vendor/firmware/goodix_gt9886_limit_f10_first.tporder
