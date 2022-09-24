@@ -31,6 +31,13 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_davinci
 
 # Kernel
 TARGET_KERNEL_CONFIG := davinci_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/davinci
+TARGET_KERNEL_ADDITIONAL_FLAGS := \
+    LLVM=1 \
+    LLVM_IAS=1
+
+BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 earlycon=msm_geni_serial,0x880000
+BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom androidboot.console=ttyMSM0
 
 # Partitions
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
